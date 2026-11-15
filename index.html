@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070d21" />
+  <meta name="description" content="ARtomic is an augmented reality-based learning packet for Grade 8 Science, bringing atomic structure and the periodic table to life." />
+  <meta property="og:title" content="ARtomic | Explore Science Beyond the Page" />
+  <meta property="og:description" content="Meet an augmented reality-based learning experience for atomic structure and the periodic table." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/artomic-logo.png" />
+  <title>ARtomic — Science Beyond the Page</title>
+  <link rel="icon" type="image/png" href="assets/artomic-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="particles" id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="ARtomic home">
+        <span class="brand-symbol"><img src="assets/artomic-logo.png" alt="" /></span>
+        <span>AR<span class="brand-tomic">tomic</span><span class="brand-period">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">The Project</a>
+        <a href="#download">Downloads</a>
+        <a href="#author">Author</a>
+      </nav>
+      <a class="header-action" href="#download">Get Started <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal is-visible">
+        <div class="hero-eyebrow"><span class="live-dot"></span> AUGMENTED REALITY × SCIENCE EDUCATION</div>
+        <div class="hero-title-wrap">
+          <p class="hero-kicker">THE FUTURE OF LEARNING IS HERE</p>
+          <h1 id="hero-title">Meet <span class="gradient-text">ARtomic.</span></h1>
+          <p class="hero-statement">Science beyond<br /><span class="line-accent">the page<span class="punctuation">.</span></span></p>
+        </div>
+        <p class="hero-description">
+          Discover a new way to learn <strong>atomic structure</strong> and the
+          <strong>periodic table</strong>. ARtomic brings science concepts to life
+          through an augmented reality-based learning packet made for Grade 8 learners.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/1B082c_aRggRHdxLu-OSZLmaUfaWRIUz6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.34a.97.97 0 0 1-.714-.3.98.98 0 0 1 .028-1.387.98.98 0 0 1 1.39.028.98.98 0 0 1-.704 1.659ZM6.48 15.34a.977.977 0 1 1 0-1.955.977.977 0 0 1 0 1.955ZM17.875 9.064l1.962-3.397a.412.412 0 0 0-.713-.41l-1.988 3.444A12.018 12.018 0 0 0 12 7.56c-1.85 0-3.594.416-5.136 1.14L4.875 5.257a.412.412 0 0 0-.712.41l1.962 3.397C2.773 10.906.5 14.207.5 18h23c0-3.793-2.274-7.094-5.625-8.936Z"/></svg>
+            Download for Android
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+          <!-- To activate the learning packet later, replace this button with an <a> tag and add your URL. See README.md. -->
+          <button class="btn btn-secondary" type="button" disabled aria-label="Learning packet download coming soon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>
+            Learning Packet
+            <span class="coming-soon">SOON</span>
+          </button>
+        </div>
+        <div class="hero-note"><span class="note-sparkle" aria-hidden="true">✦</span> Designed for curious minds and future scientists.</div>
+      </div>
+
+      <div class="hero-visual reveal is-visible" aria-label="ARtomic science learning logo">
+        <div class="visual-halo" aria-hidden="true"></div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="orbit orbit-three" aria-hidden="true"></div>
+        <span class="orbit-particle orbit-particle-a" aria-hidden="true"></span>
+        <span class="orbit-particle orbit-particle-b" aria-hidden="true"></span>
+        <span class="orbit-particle orbit-particle-c" aria-hidden="true"></span>
+        <div class="hero-logo-frame">
+          <img class="hero-logo" src="assets/artomic-logo.png" alt="ARtomic logo: a laboratory flask in a graduation cap, surrounded by atomic orbits." width="600" height="600" />
+        </div>
+        <div class="floating-tag tag-one" aria-hidden="true"><span class="tag-icon">✧</span><span><b>01 / DISCOVER</b><small>Atomic structure</small></span></div>
+        <div class="floating-tag tag-two" aria-hidden="true"><span class="tag-icon tag-icon-purple">◈</span><span><b>02 / EXPLORE</b><small>Periodic elements</small></span></div>
+        <div class="visual-caption" aria-hidden="true">MATTER IS MORE THAN MEETS THE EYE <span>↗</span></div>
+      </div>
+      <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="intro-section section-pad" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="section-top reveal">
+          <div>
+            <p class="section-eyebrow"><span class="eyebrow-line"></span> THE PROJECT</p>
+            <h2 id="about-title">Big ideas.<br /><span class="gradient-text">New dimensions.</span></h2>
+          </div>
+          <p class="section-intro">ARtomic is an <strong>augmented reality-based learning packet</strong> developed as a supplemental instructional material to help Grade 8 students explore foundational chemistry concepts in a more visual, engaging way.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="card-index">01 / STRUCTURE</span>
+            <div class="feature-visual atom-art" aria-hidden="true">
+              <div class="atom-core"><span></span></div>
+              <div class="atom-path a1"></div><div class="atom-path a2"></div><div class="atom-path a3"></div>
+            </div>
+            <h3>Inside the atom</h3>
+            <p>Take a closer look at protons, neutrons, and electrons—the tiny particles that make up matter.</p>
+            <span class="feature-footer">ATOMIC STRUCTURE <span>↗</span></span>
+          </article>
+          <article class="feature-card reveal">
+            <span class="card-index">02 / EVOLUTION</span>
+            <div class="feature-visual model-art" aria-hidden="true">
+              <span class="model-dot model-a"></span><span class="model-dot model-b"></span><span class="model-dot model-c"></span><span class="model-dot model-d"></span><span class="model-dot model-e"></span>
+              <div class="model-line"></div>
+              <div class="model-symbol">e<span>−</span></div>
+            </div>
+            <h3>Ideas through time</h3>
+            <p>Follow the development of atomic models and see how scientific ideas change with new evidence.</p>
+            <span class="feature-footer">ATOMIC MODELS <span>↗</span></span>
+          </article>
+          <article class="feature-card reveal">
+            <span class="card-index">03 / ELEMENTS</span>
+            <div class="feature-visual table-art" aria-hidden="true">
+              <div class="element element-one"><small>1</small><b>H</b></div>
+              <div class="element element-two"><small>6</small><b>C</b></div>
+              <div class="element element-three"><small>8</small><b>O</b></div>
+              <div class="element element-four"><small>10</small><b>Ne</b></div>
+            </div>
+            <h3>Discover the elements</h3>
+            <p>Explore the periodic table and uncover how elements are organized by their properties.</p>
+            <span class="feature-footer">PERIODIC TABLE <span>↗</span></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section section-pad" id="download" aria-labelledby="download-title">
+      <div class="shell">
+        <div class="download-panel reveal">
+          <div class="download-orb download-orb-one" aria-hidden="true"></div><div class="download-orb download-orb-two" aria-hidden="true"></div>
+          <div class="download-top"><span class="section-eyebrow"><span class="eyebrow-line"></span> START EXPLORING</span><span class="download-asterisk" aria-hidden="true">✳</span></div>
+          <div class="download-heading-row">
+            <div><h2 id="download-title">Your science journey<br />starts <span class="gradient-text">here.</span></h2><p>Everything you need to begin exploring ARtomic.</p></div>
+            <div class="download-graphic" aria-hidden="true"><div class="scan-corners"><span>AR</span></div></div>
+          </div>
+          <div class="download-items">
+            <div class="download-item">
+              <div class="download-item-icon android-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.34a.97.97 0 0 1-.714-.3.98.98 0 0 1 .028-1.387.98.98 0 0 1 1.39.028.98.98 0 0 1-.704 1.659ZM6.48 15.34a.977.977 0 1 1 0-1.955.977.977 0 0 1 0 1.955ZM17.875 9.064l1.962-3.397a.412.412 0 0 0-.713-.41l-1.988 3.444A12.018 12.018 0 0 0 12 7.56c-1.85 0-3.594.416-5.136 1.14L4.875 5.257a.412.412 0 0 0-.712.41l1.962 3.397C2.773 10.906.5 14.207.5 18h23c0-3.793-2.274-7.094-5.625-8.936Z"/></svg></div>
+              <div class="download-item-copy"><h3>ARtomic Android App</h3><p>Open the app download on Google Drive</p></div>
+              <a class="item-action active" href="https://drive.google.com/file/d/1B082c_aRggRHdxLu-OSZLmaUfaWRIUz6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Get the App <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="download-item">
+              <div class="download-item-icon packet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5.7c0-.6.4-1.2 1-1.4C7 3.5 9 3.6 12 5c3-1.4 5-1.5 7-.7.6.2 1 .8 1 1.4v13.8c-2.5-.9-5-.8-8 .7-3-1.5-5.5-1.6-8-.7Z"/><path d="M12 5v15.2"/></svg></div>
+              <div class="download-item-copy"><h3>ARtomic Learning Packet</h3><p>Printable learning material • Available soon</p></div>
+              <!-- LEARNING PACKET LINK: Replace the button below with an anchor when your packet is ready. -->
+              <button class="item-action unavailable" type="button" disabled>Coming Soon <span aria-hidden="true">⌛</span></button>
+            </div>
+          </div>
+          <p class="download-footnote">* The Android app opens in Google Drive. The learning packet will be linked here when available.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="author-section section-pad" id="author" aria-labelledby="author-title">
+      <div class="shell author-inner reveal">
+        <div class="author-mark" aria-hidden="true"><span>D<span class="monogram-highlight">C</span></span><div class="mark-orbit"></div></div>
+        <div class="author-text">
+          <p class="section-eyebrow"><span class="eyebrow-line"></span> THE MIND BEHIND THE PROJECT</p>
+          <h2 id="author-title">Meet the <span class="gradient-text">author.</span></h2>
+          <p class="author-name">Dexter M. Clamohoy</p>
+          <p class="author-description">Creator of ARtomic, a science education project that combines instructional materials and augmented reality to make learning about atoms and elements more accessible and engaging.</p>
+          <span class="author-label"><span class="author-label-dot"></span> SCIENCE EDUCATION × INNOVATION</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="footer-brand" href="#top">AR<span>tomic</span><b>.</b></a>
+      <p>Science beyond the page. <span>© <span id="year">2026</span> ARtomic</span></p>
+      <a href="#top" class="back-top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
